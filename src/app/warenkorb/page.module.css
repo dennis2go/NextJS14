@@ -1,0 +1,12 @@
+
+.h1 {
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 2em;
+}
+
+.waren {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+}

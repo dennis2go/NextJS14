@@ -1,0 +1,37 @@
+.homeDiv{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 99%;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+}
+
+.homeUl {
+    display: flex;
+    flex-flow: row nowrap; 
+    gap:0.8em;
+    margin-left:-6px;
+}
+
+.homeButton {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+    letter-spacing:1.9px;
+    border: none;
+    border-radius: 5px; 
+}
+
+.homeButton:hover {
+    border-bottom: 1.8px solid rgb(145, 145, 145);
+}
+
+.homeInput {
+    height: 3.2em;
+    width: 16em;
+    border-radius: 5px; 
+    border: 1.6px solid rgb(133, 130, 130);
+}

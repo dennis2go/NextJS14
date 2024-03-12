@@ -1,0 +1,18 @@
+.homeProducts {
+    margin-left: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 16px;
+}
+
+@media (max-width: 900px) {
+    .homeProducts {
+      grid-template-columns: repeat(3, 1fr); /* Wechselt zu 3 Spalten, wenn die Bildschirmbreite 800px oder weniger beträgt */
+    }
+}
+
+@media (max-width: 700px) {
+    .homeProducts {
+      grid-template-columns: repeat(2, 1fr); /* Wechselt zu 3 Spalten, wenn die Bildschirmbreite 800px oder weniger beträgt */
+    }
+}
