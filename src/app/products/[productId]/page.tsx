@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import firstPic from "../../../../public/pullover.png";
 import secondPic from "../../../../public/pullover.png";
 import {getProduct} from "../../../lib/data"
+import Searchbar from "../../_components/searchbar/Searchbar"
 
 
 type Product = {
@@ -28,7 +29,9 @@ export default async function Product( {params} : any) {
     const realPrice = product.price + "€";
 
   return (
-      <div className={styles.container}>
+    <>
+        <Searchbar/>
+        <div className={styles.container}>
         <div className={styles.pictures}>
         <Image
                 src={firstPic} // The path to your image
@@ -62,6 +65,7 @@ export default async function Product( {params} : any) {
             </div>
         </div>
     </div>
+    </>
   );
 }
 
