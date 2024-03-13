@@ -2,7 +2,7 @@
 import { connectToDb } from "./connectToDb";
 import {Product, User} from "./models"
 import { revalidatePath } from "next/cache";
-import { signIn, signOut } from "./auth";
+// import { signIn, signOut } from "./auth";
 import bcrypt from "bcryptjs";
 
 export const fillProducts = async () => { 
@@ -101,17 +101,17 @@ export const register = async (formData:any) => {
     }  
 };
 
-export const login = async (formData:any) => {
-    const { username, password } = Object.fromEntries(formData);
+// export const login = async (formData:any) => {
+//     const { username, password } = Object.fromEntries(formData);
   
-    try {
-      await signIn("credentials", { username, password });
-    } catch (err:any) {
-      console.log(err);
+//     try {
+//       await signIn("credentials", { username, password });
+//     } catch (err:any) {
+//       console.log(err);
   
-      if (err.message.includes("CredentialsSignin")) {
-        return { error: "Invalid username or password" };
-      }
-      throw err;
-    }
-  };
+//       if (err.message.includes("CredentialsSignin")) {
+//         return { error: "Invalid username or password" };
+//       }
+//       throw err;
+//     }
+//   };

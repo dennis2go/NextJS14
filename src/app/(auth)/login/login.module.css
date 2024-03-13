@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap:1.8em;
+}
+
+.h1{
+    letter-spacing: 4px;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    width:35%;
+    gap: 1em;
+}
+
+.input {
+    height:2.2em;
+    border-radius: 10px;
+    border: 1px solid rgb(133, 130, 130);
+    padding: 8px;
+}
+
+.button {
+    background-color: rgb(234, 233, 233);
+    border: 1px solid rgb(133, 130, 130);
+    border-radius: 12px; 
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing:0.8px;
+    width:80%;
+    margin-top: 14px;
+    align-self: center;
+    transition: background-color, transform 0.4s ease;
+}
+
+.button:hover {
+    background-color: rgb(238, 238, 238);
+    transform: scale(1.15);
+}
