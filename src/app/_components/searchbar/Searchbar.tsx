@@ -1,6 +1,6 @@
 import styles from "./searchbar.module.css"
 
-export default function Searchbar() {
+export default function Searchbar({onSearch}:any) {
     return (
         <div className={styles.homeDiv}> 
                 <ul className={styles.homeUl}> 
